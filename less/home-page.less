@@ -1,3 +1,54 @@
+header{
+  padding: 2% 2% 1% 2%;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  @media @tablet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+  }
+  @media @phone{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+  }
+  img{
+    width:100%;
+  }
+  h1{
+    width: 50%;
+    font-size: 4.5rem;
+    @media @phone{
+      padding-left: 6%;
+    }
+    @media @tablet{
+     width: 50%; 
+    padding-left: 10%;
+  }
+  }
+  h2{
+    width: 70%;
+    text-align: left;
+    padding: 2%;
+  }
+  p{
+    font-size: 1.4rem;
+    width: 60%;
+    border-bottom: 2px dashed @navigation-border;
+    @media @phone{
+      width: 100%;
+    }
+    @media @tablet{
+      width: 80%;
+      
+  }
+  }
+}
+
 .home {
 
   .content-section {
@@ -5,12 +56,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
 
+    }
+    @media @tablet{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      padding: 2%;
+  }
    
-    
+       
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone{
+        width: 100%;
+        padding: 5%;
+      }
     }
 
     .img-content {
@@ -30,6 +99,10 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone{
+        width: 100%;
+        padding: 1% 4%;
+      }
     }
 
     .img-content {
@@ -52,10 +125,39 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    @media @tablet{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone{
+        width: 60%;
+        padding: 1% 2%;
+      }
+      @media @tablet{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    }
+    .btn{
+      .sign-up();
     }
   }
 }// home
